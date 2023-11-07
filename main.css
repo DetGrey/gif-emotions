@@ -1,0 +1,108 @@
+/*------------------------------------------------- FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+/*------------------------------------------------- BASICS */
+:root {
+    --purple: #7E1E80;
+}
+* {
+    margin: 0;
+    padding: 0 5px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+html {
+    background: #602e60;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100vh;
+    background-image: url("background.svg");
+    background-size: 100%;
+}
+
+/* -------------------------------- SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track and corner */
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner {
+    background: #89498c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--purple);
+    border-radius: 0.5vw;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4c0e4d;
+}
+
+/*------------------------------------------------- TEXT */
+h1 {
+    font-size: 10vw;
+}
+h2 {
+    font-size: 4vw;
+    margin-bottom: 10px;
+}
+
+label, button, input, select {
+    font-size: 3vw;
+}
+
+/*------------------------------------------------- DIV */
+div {
+    padding: 5px 0;
+}
+#gifs {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 60vw;
+    height: auto;
+    padding: 10px 0;
+}
+
+/*------------------------------------------------- BUTTON */
+button {
+    background-color: #ffffff30;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #ffffff50;
+}
+
+/*------------------------------------------------- INPUT/SELECT */
+input, select, option {
+    background-color: #ffffff30;
+    font-family: 'Schoolbell', cursive;
+    border: none;
+}
+input:focus {
+    outline: var(--purple) solid 2px;
+}
+input[type=number] {
+    width: 40px;
+}
+input[type=text] {
+    padding: 5px;
+}
+select {
+    width: fit-content;
+    cursor: pointer;
+}
